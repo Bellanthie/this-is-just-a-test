@@ -16,7 +16,7 @@ namespace SUT25_Lektion_Petter_GitHubGruppArbete
         static int Multiplication(int one, int two)
         {
             return one * two;
+            //test
         }
     }
-
 }
