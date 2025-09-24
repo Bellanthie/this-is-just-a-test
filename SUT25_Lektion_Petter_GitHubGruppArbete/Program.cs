@@ -9,11 +9,11 @@ namespace SUT25_Lektion_Petter_GitHubGruppArbete
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
         }
 
-        static void Calculate(string userInput)
+        static int Calculate(string userInput)
         {
             char[] line = userInput.ToCharArray(); //Chops up the string so we can look at each character alone
             string number = ""; // Temp string to add chars (number) together to then convert to Int
@@ -49,12 +49,12 @@ namespace SUT25_Lektion_Petter_GitHubGruppArbete
             switch (matOperator)
             {
                 case "*":
-                    Multiplication(userNumberOne, userNumberTwo);
-                    break;
+                    return Multiplication(userNumberOne, userNumberTwo);
+
                 case "+":
-                    Addition(userNumberOne, userNumberTwo);
-                    break;
+                    return Addition(userNumberOne, userNumberTwo);
             }
+            return 0;
         }
 
         static int Multiplication(int one, int two)
