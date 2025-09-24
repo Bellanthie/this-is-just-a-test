@@ -17,6 +17,12 @@ namespace SUT25_Lektion_Petter_GitHubGruppArbete
         {
             return one * two;
         }
+
+        static int Addition(int one, int two)
+        {
+            return one + two;
+
+        }
     }
 
 }
