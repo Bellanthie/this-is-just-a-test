@@ -9,7 +9,7 @@ namespace SUT25_Lektion_Petter_GitHubGruppArbete
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
         }
 
@@ -49,11 +49,10 @@ namespace SUT25_Lektion_Petter_GitHubGruppArbete
             switch (matOperator)
             {
                 case "*":
-                    Multiplication(userNumberOne, userNumberTwo);
-                    break;
+                    return Multiplication(userNumberOne, userNumberTwo);
+
                 case "+":
-                    Addition(userNumberOne, userNumberTwo);
-                    break;
+                    return Addition(userNumberOne, userNumberTwo);
             }
         }
 
