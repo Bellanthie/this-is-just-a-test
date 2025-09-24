@@ -13,7 +13,7 @@ namespace SUT25_Lektion_Petter_GitHubGruppArbete
         {
         }
 
-        static void Calculate(string userInput)
+        static int Calculate(string userInput)
         {
             char[] line = userInput.ToCharArray(); //Chops up the string so we can look at each character alone
             string number = ""; // Temp string to add chars (number) together to then convert to Int
@@ -54,6 +54,7 @@ namespace SUT25_Lektion_Petter_GitHubGruppArbete
                 case "+":
                     return Addition(userNumberOne, userNumberTwo);
             }
+            return 0;
         }
 
         static int Multiplication(int one, int two)
